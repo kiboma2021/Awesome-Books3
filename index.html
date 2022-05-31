@@ -1,92 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./Assets/css/main.css">
-  <title>Awesome Books</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Books</title>
+    <link rel="stylesheet" href="./Assets/css/main.css">
+
 </head>
+
 <body>
-  <header>
-    <div class="heading">
-      <h2 class="heading-title">Awesome books</h2>
-      <nav>
-        <ul class="navbar">
-          <li>
-            <a href="#" id="books-route"> List </a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="#" id="add-new-route"> Add New </a>
-          </li>
-          <li>|</li>
-          <li>
-            <a href="#" id="contact-route"> Contact </a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-    <span class="date"></span>
-  </header>
+    <div class="container">
+        <header>
+            <nav>
+                <a>Awesome Books</a>
+                <ul>
+                    <li><a class="menuBtn" href="#" id="display-list">List</a></li>
+                    <li><a class="menuBtn" href="#" id="display-form">Add New</a></li>
+                    <li><a class="menuBtn" href="#" id="display-contact">Contact</a></li>
+                </ul>
+            </nav>
+            <p id="date"></p>
+        </header>
+        <section>
 
-  <section class="home">
-    <div id="book-list-section" class="BookCollection">
-      <div class="header">
-        <h1>All Awesome Books</h1>
-      </div>
+            <div class="all-books">
+                <h1>All Awesome Books</h1>
+                <div class="col-1">
+                </div>
+            </div>
 
-      <ul class="book-list"></ul>
-    </div>
+            <div class="adding-book">
+                <div class="add-book">
+                    <h2>Add New Book</h2>
+                    <hr>
+                    <div class="form">
+                        <form>
+                            <input type="text" id="name" placeholder="Title" required> <br><br>
+                            <input type="text" id="author" placeholder="Author" required> <br><br>
+                            <button type="submit" id="add">Add Book</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
 
-    <div class="form" id="form-section">
-      <div class="header">
-        <h1>Add Book</h1>
-      </div>
-      <form id="form" method="post" action="/">
-        <input
-          placeholder="Title"
-          type="text"
-          required
-          name="title"
-          id="title"
-        />
-        <input
-          placeholder="Author"
-          type="text"
-          required
-          name="author"
-          id="author"
-        />
-        <input type="submit" value="Add" id="add-button" />
-      </form>
+            <div class="contact">
+                <h1>Contact Information</h1>
+                <p>Do you have any questions or you just want to say "Hello"?</p>
+                <p>You can reach out to us!</p>
+                <ul>
+                    <li>Our e-mail: mail@mail.com </li>
+                    <li>Our phone number: 0415442645 </li>
+                    <li>Our address: Streetname 22, 84503, City, Country </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Copyright</p>
+        </footer>
     </div>
 
-    <div id="contact-info-section">
-      <div class="header">
-        <h1>Contact Information</h1>
-      </div>
-      <p>
-        If you have any questions or you just want to say "Hello". You can
-        reach us to.
-      </p>
-      <ul>
-        <li class="social-links">Our email: <a href="#">mail@mail.com</a></li>
-        <li class="social-links">
-          Our twitter: <a href="#">@awesomeBooks</a>
-        </li>
-        <li class="social-links">
-          Our github: <a href="#">@awesomeBooks</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <footer>
-    <div>
-      <h2>Copyright &copy;</h2>
-    </div>
-  </footer>
 
-  <script src="./Assets/js/main.js"></script>
+    <script src="./Assets/js/main.js"></script>
+
 </body>
+
+
 </html>
